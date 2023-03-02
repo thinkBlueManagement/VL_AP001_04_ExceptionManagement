@@ -1,0 +1,480 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1193.6,5302.4" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:ucas="clr-namespace:UiPath.Core.Activities.Storage;assembly=UiPath.System.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:upaf="clr-namespace:UiPath.Persistence.Activities.FormTask;assembly=UiPath.Persistence.Activities" xmlns:upamt="clr-namespace:UiPath.Persistence.Activities.Model.Task;assembly=UiPath.Persistence.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="40">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.Core.Activities.Storage</x:String>
+      <x:String>UiPath.Core.Activities.Orchestrator</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.Persistence.Activities.Model.Task</x:String>
+      <x:String>UiPath.Persistence.Activities.FormTask</x:String>
+      <x:String>UiPath.Persistence.Activities.BaseTask</x:String>
+      <x:String>UiPath.Persistence.Activities</x:String>
+      <x:String>UiPath.Persistence.Activities.Tasks</x:String>
+      <x:String>Newtonsoft.Json.Linq</x:String>
+      <x:String>Newtonsoft.Json</x:String>
+      <x:String>System.Dynamic</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Collections.Specialized</x:String>
+      <x:String>UiPath.Web.Activities</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="60">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.Watcher</AssemblyReference>
+      <AssemblyReference>System.IO.Packaging</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.AccessControl</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Linq.Parallel</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Linq.Queryable</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.Persistence.Activities</AssemblyReference>
+      <AssemblyReference>System.CodeDom</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+      <AssemblyReference>netstandard</AssemblyReference>
+      <AssemblyReference>Newtonsoft.Json</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Collections.Specialized</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="AP001_04" sap:VirtualizedContainerService.HintSize="1204,5237.6" sap2010:WorkflowViewState.IdRef="Sequence_4">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="ui:QueueItem" Name="transItem" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1141.6,5125.6" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <TryCatch.Try>
+        <Sequence DisplayName="main logic" sap:VirtualizedContainerService.HintSize="1104.8,4894.4" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence.Variables>
+            <Variable x:TypeArguments="x:String" Name="storageBucket" />
+            <Variable x:TypeArguments="x:Boolean" Name="TestRun">
+              <Variable.Default>
+                <Literal x:TypeArguments="x:Boolean" Value="True" />
+              </Variable.Default>
+            </Variable>
+          </Sequence.Variables>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <If Condition="[TestRun]" sap:VirtualizedContainerService.HintSize="1042.4,1444" sap2010:WorkflowViewState.IdRef="If_7">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <If.Then>
+              <Sequence DisplayName="Get trans item" sap:VirtualizedContainerService.HintSize="496,1165.6" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                <Sequence.Variables>
+                  <Variable x:TypeArguments="scg:IEnumerable(ui:QueueItem)" Name="queueItemTest" />
+                </Sequence.Variables>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:GetQueueItems Priority="{x:Null}" DisplayName="Get Queue Items" FilterStrategy="Equals" FolderPath="Finance/AP" sap:VirtualizedContainerService.HintSize="433.6,932" sap2010:WorkflowViewState.IdRef="GetQueueItems_1" QueueItemStates="New, InProgress, Failed, Successful, Abandoned, Retried" QueueName="AP001_03_ExceptionManagement" Reference="919680_20230226045636_Action Express Invoice 919680.pdf" Result="[queueItemTest]">
+                  <ui:GetQueueItems.Duration>
+                    <InArgument x:TypeArguments="s:Nullable(x:Int32)" />
+                  </ui:GetQueueItems.Duration>
+                  <ui:GetQueueItems.From>
+                    <InArgument x:TypeArguments="s:Nullable(s:DateTime)" />
+                  </ui:GetQueueItems.From>
+                  <ui:GetQueueItems.Skip>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:GetQueueItems.Skip>
+                  <ui:GetQueueItems.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:GetQueueItems.TimeoutMS>
+                  <ui:GetQueueItems.To>
+                    <InArgument x:TypeArguments="s:Nullable(s:DateTime)" />
+                  </ui:GetQueueItems.To>
+                  <ui:GetQueueItems.Top>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:GetQueueItems.Top>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </ui:GetQueueItems>
+                <Assign DisplayName="Assign transaction Item" sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_10">
+                  <Assign.To>
+                    <OutArgument x:TypeArguments="ui:QueueItem">[transItem]</OutArgument>
+                  </Assign.To>
+                  <Assign.Value>
+                    <InArgument x:TypeArguments="ui:QueueItem">[queueItemTest.FirstOrDefault]</InArgument>
+                  </Assign.Value>
+                </Assign>
+              </Sequence>
+            </If.Then>
+            <If.Else>
+              <ui:GetQueueItem ContinueOnError="{x:Null}" DisplayName="Get Transaction Item" FolderPath="Finance/AP" sap:VirtualizedContainerService.HintSize="200,52.8" sap2010:WorkflowViewState.IdRef="GetQueueItem_1" QueueType="AP001_03_ExceptionManagement" TransactionItem="[transItem]">
+                <ui:GetQueueItem.Reference>
+                  <InArgument x:TypeArguments="x:String" />
+                </ui:GetQueueItem.Reference>
+                <ui:GetQueueItem.TimeoutMS>
+                  <InArgument x:TypeArguments="x:Int32" />
+                </ui:GetQueueItem.TimeoutMS>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:GetQueueItem>
+            </If.Else>
+          </If>
+          <Assign DisplayName="Assign storage bucket" sap:VirtualizedContainerService.HintSize="1042.4,81.6" sap2010:WorkflowViewState.IdRef="Assign_1">
+            <Assign.To>
+              <OutArgument x:TypeArguments="x:String">[storageBucket]</OutArgument>
+            </Assign.To>
+            <Assign.Value>
+              <InArgument x:TypeArguments="x:String">AP001_storageBucket</InArgument>
+            </Assign.Value>
+          </Assign>
+          <If Condition="[transItem is Nothing]" sap:VirtualizedContainerService.HintSize="1042.4,3176.8" sap2010:WorkflowViewState.IdRef="If_1">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <If.Then>
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="200,52.8" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[&quot;no transaction item to process&quot;]">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:LogMessage>
+            </If.Then>
+            <If.Else>
+              <Sequence sap:VirtualizedContainerService.HintSize="964.8,2898.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
+                <Sequence.Variables>
+                  <Variable x:TypeArguments="upamt:TaskPriority" Name="myTaskPriority" />
+                  <Variable x:TypeArguments="x:Int32" Name="retryCount" />
+                  <Variable x:TypeArguments="x:String" Name="myTaskCatalog" />
+                  <Variable x:TypeArguments="upaf:FormTaskData" Name="myTaskOutput" />
+                  <Variable x:TypeArguments="x:String" Name="myTaskAction" />
+                  <Variable x:TypeArguments="upaf:FormTaskData" Name="myNewTaskOutput" />
+                  <Variable x:TypeArguments="scg:Dictionary(x:String, x:Object)" Name="myTransDict" />
+                </Sequence.Variables>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="902.4,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_2" Message="[&quot;Processing &quot; + transItem.Reference]" />
+                <ucas:UploadStorageFile FileResource="{x:Null}" TimeoutMS="{x:Null}" Destination="[path.GetFileName(TransItem.SpecificContent(&quot;targetFileKey&quot;).tostring)]" DisplayName="Upload Storage File - PDF invoice" sap:VirtualizedContainerService.HintSize="902.4,241.6" sap2010:WorkflowViewState.IdRef="UploadStorageFile_1" Path="[TransItem.SpecificContent(&quot;targetFileKey&quot;).tostring]" StorageBucketName="[storageBucket]" />
+                <ucas:UploadStorageFile FileResource="{x:Null}" TimeoutMS="{x:Null}" Destination="[path.GetFileName(TransItem.SpecificContent(&quot;exceptionScreenShot&quot;).tostring)]" DisplayName="Upload Storage File - Ex screenshot" sap:VirtualizedContainerService.HintSize="902.4,241.6" sap2010:WorkflowViewState.IdRef="UploadStorageFile_2" Path="[TransItem.SpecificContent(&quot;exceptionScreenShot&quot;).tostring]" StorageBucketName="[storageBucket]" />
+                <If Condition="[transItem.SpecificContent.Keys.Contains(&quot;cancel&quot;)]" DisplayName="Set task priority" sap:VirtualizedContainerService.HintSize="902.4,656.8" sap2010:WorkflowViewState.IdRef="If_2">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <If.Then>
+                    <If Condition="[TransItem.specificContent(&quot;exceptionType&quot;).ToString.Equals(&quot;BE&quot;)]" sap:VirtualizedContainerService.HintSize="511.2,378.4" sap2010:WorkflowViewState.IdRef="If_4">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <If.Then>
+                        <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_3">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="upamt:TaskPriority">[myTaskPriority]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="upamt:TaskPriority">[myTaskPriority.High]</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                      </If.Then>
+                      <If.Else>
+                        <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_4">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="upamt:TaskPriority">[myTaskPriority]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="upamt:TaskPriority">[myTaskPriority.Critical]</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                      </If.Else>
+                    </If>
+                  </If.Then>
+                  <If.Else>
+                    <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_6">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="upamt:TaskPriority">[myTaskPriority]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="upamt:TaskPriority">[myTaskPriority.Medium]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                  </If.Else>
+                </If>
+                <If Condition="[transItem.SpecificContent.Keys.Contains(&quot;retryCount&quot;)]" DisplayName="Set retry count" sap:VirtualizedContainerService.HintSize="902.4,52.8" sap2010:WorkflowViewState.IdRef="If_5">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <If.Then>
+                    <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_7">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:Int32">[retryCount]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:Int32">[retryCount + 1]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                  </If.Then>
+                  <If.Else>
+                    <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_5">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:Int32">[retryCount]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:Int32">0</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                  </If.Else>
+                </If>
+                <If Condition="[transItem.SpecificContent(&quot;exceptionType&quot;).Equals(&quot;BE&quot;)]" DisplayName="Set Task catalog" sap:VirtualizedContainerService.HintSize="902.4,52.8" sap2010:WorkflowViewState.IdRef="If_6">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <If.Then>
+                    <Assign DisplayName="Assign Business Exception Task Catalog name" sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_8">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[myTaskCatalog]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">AP001_Business_Exception</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                  </If.Then>
+                  <If.Else>
+                    <Assign DisplayName="Assign System Exception Task Catalog name" sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_9">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[myTaskCatalog]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">AP001_System_Exception</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                  </If.Else>
+                </If>
+                <upaf:CreateFormTask BulkFormLayout="{x:Null}" DynamicFormPath="{x:Null}" TimeoutMs="{x:Null}" BucketFolderPath="Finance/AP" BucketName="[storageBucket]" BulkFormLayoutGuid="8e5023d2-78e5-4fcc-bcb4-15474bd0c979" DisplayName="Create Form Task" EnableBulkEdit="False" EnableDynamicForms="False" ExternalTag="[transItem.reference]" FolderPath="Finance/AP" FormLayout="%[{&quot;title&quot;:&quot;AP Exception Management Form&quot;,&quot;theme&quot;:&quot;primary&quot;,&quot;collapsible&quot;:false,&quot;key&quot;:&quot;panel&quot;,&quot;type&quot;:&quot;panel&quot;,&quot;label&quot;:&quot;AP Exception Management Form&quot;,&quot;input&quot;:false,&quot;tableView&quot;:false,&quot;components&quot;:[{&quot;components&quot;:[{&quot;label&quot;:&quot;Details&quot;,&quot;key&quot;:&quot;details&quot;,&quot;components&quot;:[{&quot;columns&quot;:[{&quot;components&quot;:[{&quot;label&quot;:&quot;Reference&quot;,&quot;labelPosition&quot;:&quot;left-left&quot;,&quot;disabled&quot;:true,&quot;tableView&quot;:true,&quot;key&quot;:&quot;reference&quot;,&quot;type&quot;:&quot;textfield&quot;,&quot;labelWidth&quot;:30,&quot;input&quot;:true,&quot;hideOnChildrenHidden&quot;:false},{&quot;label&quot;:&quot;Exception&quot;,&quot;labelPosition&quot;:&quot;left-left&quot;,&quot;disabled&quot;:true,&quot;tableView&quot;:true,&quot;key&quot;:&quot;exception&quot;,&quot;type&quot;:&quot;textfield&quot;,&quot;labelWidth&quot;:30,&quot;input&quot;:true,&quot;hideOnChildrenHidden&quot;:false},{&quot;label&quot;:&quot;Extraction Type&quot;,&quot;labelPosition&quot;:&quot;left-left&quot;,&quot;disabled&quot;:true,&quot;tableView&quot;:true,&quot;key&quot;:&quot;extractionType&quot;,&quot;type&quot;:&quot;textfield&quot;,&quot;labelWidth&quot;:30,&quot;input&quot;:true,&quot;hideOnChildrenHidden&quot;:false},{&quot;label&quot;:&quot;Retries&quot;,&quot;labelPosition&quot;:&quot;left-left&quot;,&quot;disabled&quot;:true,&quot;tableView&quot;:true,&quot;key&quot;:&quot;retryCount&quot;,&quot;type&quot;:&quot;textfield&quot;,&quot;labelWidth&quot;:30,&quot;input&quot;:true,&quot;hideOnChildrenHidden&quot;:false},{&quot;label&quot;:&quot;HTML&quot;,&quot;tag&quot;:&quot;hr&quot;,&quot;attrs&quot;:[{&quot;attr&quot;:&quot;&quot;,&quot;value&quot;:&quot;&quot;}],&quot;refreshOnChange&quot;:false,&quot;key&quot;:&quot;html&quot;,&quot;type&quot;:&quot;htmlelement&quot;,&quot;input&quot;:false,&quot;tableView&quot;:false,&quot;hideOnChildrenHidden&quot;:false},{&quot;label&quot;:&quot;Inv Number&quot;,&quot;labelPosition&quot;:&quot;left-left&quot;,&quot;tableView&quot;:true,&quot;validate&quot;:{&quot;required&quot;:true},&quot;key&quot;:&quot;invoiceNumber&quot;,&quot;type&quot;:&quot;textfield&quot;,&quot;labelWidth&quot;:30,&quot;input&quot;:true,&quot;hideOnChildrenHidden&quot;:false},{&quot;label&quot;:&quot;PO Number&quot;,&quot;labelPosition&quot;:&quot;left-left&quot;,&quot;tableView&quot;:true,&quot;validate&quot;:{&quot;required&quot;:true},&quot;key&quot;:&quot;poNumber&quot;,&quot;type&quot;:&quot;textfield&quot;,&quot;labelWidth&quot;:30,&quot;input&quot;:true,&quot;hideOnChildrenHidden&quot;:false},{&quot;label&quot;:&quot;Invoice Date&quot;,&quot;labelPosition&quot;:&quot;left-left&quot;,&quot;tableView&quot;:true,&quot;validate&quot;:{&quot;required&quot;:true},&quot;key&quot;:&quot;invoiceDate&quot;,&quot;type&quot;:&quot;textfield&quot;,&quot;labelWidth&quot;:30,&quot;input&quot;:true,&quot;hideOnChildrenHidden&quot;:false},{&quot;label&quot;:&quot;Invoice Total&quot;,&quot;labelPosition&quot;:&quot;left-left&quot;,&quot;tableView&quot;:true,&quot;validate&quot;:{&quot;required&quot;:true},&quot;key&quot;:&quot;invoiceTotal&quot;,&quot;type&quot;:&quot;textfield&quot;,&quot;labelWidth&quot;:30,&quot;input&quot;:true,&quot;hideOnChildrenHidden&quot;:false},{&quot;label&quot;:&quot;Vendor Number&quot;,&quot;labelPosition&quot;:&quot;left-left&quot;,&quot;tableView&quot;:true,&quot;validate&quot;:{&quot;required&quot;:true},&quot;key&quot;:&quot;vendorNumber&quot;,&quot;type&quot;:&quot;textfield&quot;,&quot;labelWidth&quot;:30,&quot;input&quot;:true,&quot;hideOnChildrenHidden&quot;:false},{&quot;label&quot;:&quot;Vendor Name&quot;,&quot;labelPosition&quot;:&quot;left-left&quot;,&quot;tableView&quot;:true,&quot;key&quot;:&quot;vendorName&quot;,&quot;type&quot;:&quot;textfield&quot;,&quot;labelWidth&quot;:30,&quot;input&quot;:true,&quot;hideOnChildrenHidden&quot;:false},{&quot;label&quot;:&quot;Invoice Type&quot;,&quot;labelPosition&quot;:&quot;left-left&quot;,&quot;description&quot;:&quot;Whether freight or not. Refer to vendor list&quot;,&quot;tableView&quot;:true,&quot;validate&quot;:{&quot;required&quot;:true},&quot;key&quot;:&quot;invoiceType&quot;,&quot;type&quot;:&quot;textfield&quot;,&quot;labelWidth&quot;:30,&quot;input&quot;:true,&quot;hideOnChildrenHidden&quot;:false}],&quot;width&quot;:5,&quot;offset&quot;:0,&quot;push&quot;:0,&quot;pull&quot;:0,&quot;size&quot;:&quot;md&quot;},{&quot;components&quot;:[{&quot;label&quot;:&quot;HTML&quot;,&quot;attrs&quot;:[{&quot;attr&quot;:&quot;&quot;,&quot;value&quot;:&quot;&quot;}],&quot;content&quot;:&quot;&lt;embed src={{ data.invoice_storage }} width=\&quot;800px\&quot; height=\&quot;600px\&quot;&gt;&lt;/embed&gt;&quot;,&quot;refreshOnChange&quot;:true,&quot;key&quot;:&quot;invoice_storage&quot;,&quot;type&quot;:&quot;htmlelement&quot;,&quot;input&quot;:false,&quot;tableView&quot;:false,&quot;hideOnChildrenHidden&quot;:false}],&quot;width&quot;:7,&quot;offset&quot;:0,&quot;push&quot;:0,&quot;pull&quot;:0,&quot;size&quot;:&quot;md&quot;}],&quot;key&quot;:&quot;columns2&quot;,&quot;type&quot;:&quot;columns&quot;,&quot;input&quot;:false,&quot;tableView&quot;:false,&quot;label&quot;:&quot;Columns&quot;}]},{&quot;label&quot;:&quot;Error Screenshot&quot;,&quot;key&quot;:&quot;errorScreenshot&quot;,&quot;components&quot;:[{&quot;label&quot;:&quot;HTML&quot;,&quot;attrs&quot;:[{&quot;attr&quot;:&quot;&quot;,&quot;value&quot;:&quot;&quot;}],&quot;content&quot;:&quot;&lt;embed src={{ data.exceptionScreenShot_storage }} width=\&quot;1280px\&quot; height=\&quot;600px\&quot;&gt;&lt;/embed&gt;&quot;,&quot;refreshOnChange&quot;:true,&quot;key&quot;:&quot;exceptionScreenShot_storage&quot;,&quot;type&quot;:&quot;htmlelement&quot;,&quot;input&quot;:false,&quot;tableView&quot;:false}]}],&quot;key&quot;:&quot;tabs1&quot;,&quot;type&quot;:&quot;tabs&quot;,&quot;input&quot;:false,&quot;tableView&quot;:false,&quot;label&quot;:&quot;Tabs&quot;}]},{&quot;mask&quot;:false,&quot;customClass&quot;:&quot;uipath-button-container&quot;,&quot;tableView&quot;:true,&quot;alwaysEnabled&quot;:false,&quot;type&quot;:&quot;table&quot;,&quot;input&quot;:false,&quot;key&quot;:&quot;key&quot;,&quot;label&quot;:&quot;label&quot;,&quot;rows&quot;:[[{&quot;components&quot;:[{&quot;label&quot;:&quot;Cancel&quot;,&quot;theme&quot;:&quot;danger&quot;,&quot;size&quot;:&quot;lg&quot;,&quot;disableOnInvalid&quot;:true,&quot;tableView&quot;:true,&quot;key&quot;:&quot;cancel&quot;,&quot;custom&quot;:&quot;instance.emit('executeDoBlock', instance.component);&quot;,&quot;type&quot;:&quot;button&quot;,&quot;input&quot;:true,&quot;alwaysEnabled&quot;:false,&quot;isResetData&quot;:false}]},{&quot;components&quot;:[{&quot;label&quot;:&quot;Submit&quot;,&quot;size&quot;:&quot;lg&quot;,&quot;disableOnInvalid&quot;:true,&quot;tableView&quot;:true,&quot;key&quot;:&quot;submit&quot;,&quot;custom&quot;:&quot;instance.emit('executeDoBlock', instance.component);&quot;,&quot;type&quot;:&quot;button&quot;,&quot;input&quot;:true,&quot;alwaysEnabled&quot;:false,&quot;isResetData&quot;:false}]},{&quot;components&quot;:[]},{&quot;components&quot;:[]},{&quot;components&quot;:[]},{&quot;components&quot;:[]}]],&quot;numRows&quot;:1,&quot;numCols&quot;:6,&quot;reorder&quot;:false}]" FormLayoutGuid="7aa2c5a9-4f64-4822-b5f2-e28a9a47ea8d" GenerateInputFields="False" sap:VirtualizedContainerService.HintSize="902.4,372.8" sap2010:WorkflowViewState.IdRef="CreateFormTask_1" Labels="Exception" TaskCatalog="[myTaskCatalog]" TaskOutput="[myTaskOutput]" TaskPriority="[myTaskPriority]" TaskTitle="[TransItem.SpecificContent(&quot;invoiceNumber&quot;).ToString +&quot; - &quot; + Left(TransItem.SpecificContent(&quot;exception&quot;).ToString,100) + &quot; - &quot; + TransItem.Reference]">
+                  <upaf:CreateFormTask.FormData>
+                    <InArgument x:TypeArguments="x:String" x:Key="reference">
+                      <VisualBasicValue x:TypeArguments="x:String" ExpressionText="transItem.Reference" />
+                    </InArgument>
+                    <InArgument x:TypeArguments="x:String" x:Key="invoiceNumber">
+                      <VisualBasicValue x:TypeArguments="x:String" ExpressionText="transItem.SpecificContent(&quot;invoiceNumber&quot;).ToString" />
+                    </InArgument>
+                    <InArgument x:TypeArguments="x:String" x:Key="poNumber">
+                      <VisualBasicValue x:TypeArguments="x:String" ExpressionText="transItem.SpecificContent(&quot;poNumber&quot;).ToString" />
+                    </InArgument>
+                    <InArgument x:TypeArguments="x:String" x:Key="invoiceDate">
+                      <VisualBasicValue x:TypeArguments="x:String" ExpressionText="transItem.SpecificContent(&quot;invoiceDate&quot;).ToString" />
+                    </InArgument>
+                    <InArgument x:TypeArguments="x:String" x:Key="vendorNumber">
+                      <VisualBasicValue x:TypeArguments="x:String" ExpressionText="transItem.SpecificContent(&quot;vendorNumber&quot;).ToString" />
+                    </InArgument>
+                    <InArgument x:TypeArguments="x:String" x:Key="vendorName">
+                      <VisualBasicValue x:TypeArguments="x:String" ExpressionText="transItem.SpecificContent(&quot;vendorName&quot;).ToString" />
+                    </InArgument>
+                    <InArgument x:TypeArguments="x:String" x:Key="invoiceTotal">
+                      <VisualBasicValue x:TypeArguments="x:String" ExpressionText="transItem.SpecificContent(&quot;invoiceTotal&quot;).ToString" />
+                    </InArgument>
+                    <InArgument x:TypeArguments="x:String" x:Key="invoiceType">
+                      <VisualBasicValue x:TypeArguments="x:String" ExpressionText="transItem.SpecificContent(&quot;invoiceType&quot;).ToString" />
+                    </InArgument>
+                    <InArgument x:TypeArguments="x:String" x:Key="extractionType">
+                      <VisualBasicValue x:TypeArguments="x:String" ExpressionText="transItem.SpecificContent(&quot;extractionType&quot;).ToString" />
+                    </InArgument>
+                    <InArgument x:TypeArguments="x:String" x:Key="exception">
+                      <VisualBasicValue x:TypeArguments="x:String" ExpressionText="transItem.SpecificContent(&quot;exception&quot;).ToString" />
+                    </InArgument>
+                    <InArgument x:TypeArguments="x:String" x:Key="exceptionScreenShot_storage">
+                      <VisualBasicValue x:TypeArguments="x:String" ExpressionText="path.GetFileName(TransItem.SpecificContent(&quot;exceptionScreenShot&quot;).tostring).ToString" />
+                    </InArgument>
+                    <InArgument x:TypeArguments="x:String" x:Key="invoice_storage">
+                      <VisualBasicValue x:TypeArguments="x:String" ExpressionText="path.GetFileName(TransItem.SpecificContent(&quot;targetFileKey&quot;).tostring).ToString" />
+                    </InArgument>
+                    <InArgument x:TypeArguments="x:String" x:Key="retryCount">
+                      <VisualBasicValue x:TypeArguments="x:String" ExpressionText="cstr(retryCount)" />
+                    </InArgument>
+                  </upaf:CreateFormTask.FormData>
+                </upaf:CreateFormTask>
+                <upaf:WaitForFormTaskAndResume StatusMessage="{x:Null}" TimeoutMs="{x:Null}" WaitItemDataObject="{x:Null}" DisplayName="Wait for Form Task and Resume" sap:VirtualizedContainerService.HintSize="902.4,221.6" sap2010:WorkflowViewState.IdRef="WaitForFormTaskAndResume_1" TaskAction="[myTaskAction]" TaskInput="[myTaskOutput]" TaskOutput="[myNewTaskOutput]" />
+                <ui:DeserializeJson x:TypeArguments="scg:Dictionary(x:String, x:Object)" DisplayName="Deserialize JSON" sap:VirtualizedContainerService.HintSize="902.4,60" sap2010:WorkflowViewState.IdRef="DeserializeJson`1_1" JsonObject="[myTransDict]" JsonString="[myNewTaskOutput.Data.ToString]" />
+                <Switch x:TypeArguments="x:String" DisplayName="Switch" Expression="[myTaskAction]" sap:VirtualizedContainerService.HintSize="902.4,433.6" sap2010:WorkflowViewState.IdRef="Switch`1_2">
+                  <ui:AddQueueItem ServiceBaseAddress="{x:Null}" x:Key="submit" DisplayName="Add Queue Item" FolderPath="Finance/AP" sap:VirtualizedContainerService.HintSize="334.4,223.2" sap2010:WorkflowViewState.IdRef="AddQueueItem_1" ItemInformationCollection="[myTransDict]" Priority="Normal" QueueType="AP001_02_SAP_Posting" Reference="[transItem.Reference]">
+                    <ui:AddQueueItem.ItemInformation>
+                      <InArgument x:TypeArguments="x:String" x:Key="transactionKey">[transItem.SpecificContent("transactionKey").ToString]</InArgument>
+                      <InArgument x:TypeArguments="x:String" x:Key="targetFileKey">[transItem.SpecificContent("targetFileKey").ToString]</InArgument>
+                      <InArgument x:TypeArguments="x:String" x:Key="vendorAddress">[transItem.SpecificContent("vendorAddress").ToString]</InArgument>
+                    </ui:AddQueueItem.ItemInformation>
+                    <ui:AddQueueItem.TimeoutMS>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:AddQueueItem.TimeoutMS>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:AddQueueItem>
+                  <ui:SetTransactionStatus ContinueOnError="{x:Null}" ServiceBaseAddress="{x:Null}" x:Key="cancel" DisplayName="Set Transaction Status" ErrorType="Business" FolderPath="Finance/AP" sap:VirtualizedContainerService.HintSize="334.4,223.2" sap2010:WorkflowViewState.IdRef="SetTransactionStatus_1" Reason="Task cancelled by user" Status="Failed" TransactionItem="[transItem]">
+                    <ui:SetTransactionStatus.Analytics>
+                      <scg:Dictionary x:TypeArguments="x:String, InArgument" />
+                    </ui:SetTransactionStatus.Analytics>
+                    <ui:SetTransactionStatus.Details>
+                      <InArgument x:TypeArguments="x:String" />
+                    </ui:SetTransactionStatus.Details>
+                    <ui:SetTransactionStatus.Output>
+                      <scg:Dictionary x:TypeArguments="x:String, InArgument" />
+                    </ui:SetTransactionStatus.Output>
+                    <ui:SetTransactionStatus.TimeoutMS>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:SetTransactionStatus.TimeoutMS>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:SetTransactionStatus>
+                </Switch>
+              </Sequence>
+            </If.Else>
+          </If>
+        </Sequence>
+      </TryCatch.Try>
+      <TryCatch.Catches>
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="1108,22.4" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ActivityAction x:TypeArguments="s:Exception">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+            </ActivityAction.Argument>
+            <ui:SetTransactionStatus ContinueOnError="{x:Null}" ServiceBaseAddress="{x:Null}" DisplayName="Set Transaction Status" ErrorType="Business" FolderPath="Finance/AP" sap:VirtualizedContainerService.HintSize="334.4,708.8" sap2010:WorkflowViewState.IdRef="SetTransactionStatus_2" Reason="[&quot;AP001_04 Module failed - &quot; + exception.Message]" Status="Failed" TransactionItem="[transItem]">
+              <ui:SetTransactionStatus.Analytics>
+                <scg:Dictionary x:TypeArguments="x:String, InArgument" />
+              </ui:SetTransactionStatus.Analytics>
+              <ui:SetTransactionStatus.Details>
+                <InArgument x:TypeArguments="x:String" />
+              </ui:SetTransactionStatus.Details>
+              <ui:SetTransactionStatus.Output>
+                <scg:Dictionary x:TypeArguments="x:String, InArgument" />
+              </ui:SetTransactionStatus.Output>
+              <ui:SetTransactionStatus.TimeoutMS>
+                <InArgument x:TypeArguments="x:Int32" />
+              </ui:SetTransactionStatus.TimeoutMS>
+            </ui:SetTransactionStatus>
+          </ActivityAction>
+        </Catch>
+      </TryCatch.Catches>
+    </TryCatch>
+  </Sequence>
+</Activity>
